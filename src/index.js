@@ -1,1 +1,4 @@
-console.log("Hi");
+import { getWeatherData } from "./modules/api";
+import { renderWeather, loadWeather } from "./modules/DOM";
+
+loadWeather();
