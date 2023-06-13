@@ -10,12 +10,12 @@ const renderWeather = (data) => {
   const tempInCelsius = data.current.feelslike_c;
   const wind = data.current.wind_kph;
   const tempInFahreneit = data.current.feelslike_f;
-
+  // console.log();
   let tempUnit = "°C";
   let currentTemp = tempInCelsius;
 
   weatherContent.innerHTML = `
-  <h2 id="">Weather in ${locationName}, ${countryName}</h2>
+  <h2 id="location-name">Weather in ${locationName}, ${countryName}</h2>
   <h1 id="temp">${currentTemp}${tempUnit}</h1>
   <div class="middle-content">
   <img src="${data.current.condition.icon}" alt="" />

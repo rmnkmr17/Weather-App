@@ -119,3 +119,7 @@ img {
   background-color: rgb(151, 245, 0);
   color: black;
 }
+
+#location-name {
+  margin-top: 10px;
+}
