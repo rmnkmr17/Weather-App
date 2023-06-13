@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap");
 
 body {
-  background-color: lightgrey;
+  background-color: rgb(0, 0, 0);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +10,8 @@ body {
   height: 100vh;
   justify-content: center;
   font-family: "Bitter", serif;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover;
 }
 
 .container {
@@ -20,10 +22,14 @@ body {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: rgba(29, 29, 29, 0.773);
+  color: white;
+  backdrop-filter: blur(2.5px);
 }
 
 .weather-content {
+  user-select: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,20 +57,45 @@ body {
   height: 40px;
   width: 40px;
   font-size: 22px;
+  border-radius: 0 5px 5px 0;
+  background-color: #67e8f9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+#search-btn:hover {
+  cursor: pointer;
+  background-color: #4a7deb;
 }
 
 input {
   width: 100%;
   padding-left: 15px;
   font-size: 22px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  background-color: #c1e2e7;
+}
+
+input::placeholder {
+  color: rgba(5, 7, 38, 0.565);
+}
+
+input:focus {
+  outline: none;
 }
 
 h1 {
   margin: 5px;
+  font-size: 40px;
+  color: yellow;
 }
 
 h2 {
   font-size: 32px;
+  color: rgb(227, 246, 227);
+  padding: 10px;
   margin: 0;
 }
 h3 {
@@ -74,4 +105,17 @@ h3 {
 img {
   height: 42px;
   width: 42px;
+}
+
+#toggle-unit {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 15px;
+  font-size: 22px;
+  border-radius: 30px;
+  border: none;
+}
+#toggle-unit:hover {
+  background-color: rgb(151, 245, 0);
+  color: black;
 }
