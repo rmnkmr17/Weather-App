@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap");
+
+body {
+  background-color: lightgrey;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  font-family: "Bitter", serif;
+}
+
+.container {
+  width: 600px;
+  height: 300px;
+  padding: 30px;
+  background-color: rgb(147, 147, 223);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#form {
+  height: 40px;
+  display: flex;
+}
+
+#search-btn {
+  height: 40px;
+  width: 40px;
+  font-size: 22px;
+}
+
+input {
+  width: 100%;
+  padding-left: 15px;
+  font-size: 22px;
+}
+
+h1 {
+  margin: 5px;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 0;
+}
+h3 {
+  margin-top: 15px;
+}
+
+img {
+  height: 42px;
+  width: 42px;
+}
